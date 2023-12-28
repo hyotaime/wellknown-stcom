@@ -109,7 +109,7 @@
         <li>멀티미디어시스템</li>
         <li>빅데이터처리</li>
         <li>웹서버프로그래밍</li>
-        <li>컴파일러구조</li>
+        <li>컴파일러구조: <a href="https://library.seoultech.ac.kr/#/search/detail/330699" target="_blank">Compilers, principles, techniques, and tools /  Aho, Alfred V. / Massachusetts: Addison-Wesley Publishing Company, 1986</a></li>
         <li>클라우드시스템</li>
         <li>블록체인</li>
 </ul>
