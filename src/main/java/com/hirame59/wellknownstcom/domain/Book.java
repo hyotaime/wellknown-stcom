@@ -19,6 +19,8 @@ public class Book {
     private String name;
     private String author;
     private String etc;
+    private String liblinkinfo;
+    private String liblink;
     private String linkinfo;
     private String link;
 }
