@@ -22,11 +22,13 @@ public class HomeController {
 
     @GetMapping("/")
     public String home(Model model) {
-        // 서비스 계층의 findMembers 메서드를 이용해 전체 랭킹 정보를 가져옴
+        // 서비스 계층의 findBooks 메서드를 이용해 전체 정보를 가져옴
         List<Book> book = bookService.findBooks();
         List<Info> info = infoService.findInfo();
+        // 가져온 정보를 과목 코드 순으로 sort
         book.sort(Comparator.comparing(Book::getCid));
         info.sort(Comparator.comparing(Info::getId).reversed());
+        // 가져온 정보를 뷰에 전달
         model.addAttribute("book", book);
         model.addAttribute("info", info);
         return "home";
